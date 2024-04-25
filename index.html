@@ -4,47 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portafolio
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Proyectos personales</a>
-                  <a class="dropdown-item" href="#">Desafio 1</a>
-                  <a class="dropdown-item" href="#">Desafio 2</a>
-                  <a class="dropdown-item" href="#">Desafio 3</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mi Portafolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Formación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Experiencia</a>
-            </li>
-            
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#uno">Formación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dos">Experiencia</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#tres" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portafolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#1">Desafio1</a></li>
+                  <li><a class="dropdown-item" href="#2">Desafio2</a></li>
+                  <li><a class="dropdown-item" href="#3">Desafio3</a></li>
+                  <li><a class="dropdown-item" href="#4">Desafio4</a></li>
+                  <li><a class="dropdown-item" href="#5">Desafio5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+
+      <div class="presentacion">
+        <div class="fondo d-flex align-items-center justify-content-center">
+       <h1>Portafolio Módulo 1</h1>
+         </div>
+      </div>
+
+
+      <section id="uno">
+      <div class="container text-center"><h1 class="titsec">Formación</h1></div>
+
+      <div class="container d-flex flex-row flex-wrap justify-content-center gap-5">
+
+      <div class="card col-3" style="width: 18rem;">
+        <img src="assets/img/logo1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Estudiante Fullstack</h5>
+          <p class="card-text">En desafío latam</p>
+        </div>
+      </div>
+
+      <div class="card col-3" style="width: 18rem;">
+        <img src="assets/img/logo2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diseño</h5>
+          <p class="card-text">En la Universidad Católica</p>
+        </div>
+      </div>
+
+      <div class="card col-3" style="width: 18rem;">
+        <img src="assets/img/logo3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Enseñanza básica y media</h5>
+          <p class="card-text">En colegio San Gabriel</p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+
+    <section id="dos">
+      <h1 class="container text-center titsec">Experiencia</h1>
+      <div class="container d-flex flex-row flex-wrap justify-content-center ">
+      <div class="card " style="width: 80rem;">
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex flex-row"><h6 class="me-2">Altafid</h6></p>Actualmente trabajo como diseñadora UX en Altafid</p></li>
+          <li class="list-group-item d-flex flex-row"><h6 class="me-2">C80 Fondart</h6>Realicé el diseño de la webstory sobre pensiones en Chile. Esta incluía la visualización de datos sobre el tema.</li>
+          <li class="list-group-item d-flex flex-row"><h6 class="me-2">C80.cl</h6>Realicé las piezas gráficas y audiovisuales de c80.cl para redes sociales como Facebook, Instagram y Tiktok</li>
+          <li class="list-group-item d-flex flex-row"><h6 class="me-2">DTS</h6>Realicé clases de HTML, CSS, Javascript y Figma nivel básico.</li>
+          <li class="list-group-item d-flex flex-row"><h6 class="me-2">TEMET</h6>Fui ayudante del ramo TEMET. Donde se sistematiza el proceso de investigación del plantemeanto de proyectos en la disciplina del diseño.          </li>
+          <li class="list-group-item d-flex flex-row"><h6 class="me-2">Brandbits</h6>Práctica profesional. Realicé el desarrollo web en wordpress para sitios como beneficios papa johns, just burger, entre otros.</li>
+        </ul>
+      </div>
     
+    </div>
+</section>
 
-    <hr>
 
-      <div class="des1">
+<section id="tres">
+    <div class="container text-center"><h1 class="titsec">Portafolio</h1></div>
+
+
+
+      <div class="des1" id="1">
         <div class="texto">
-        <h1>Desafío 1. Introducción a HTML</h1>
+        <h2>Desafío 1. Introducción a HTML</h2>
         <p>Se ha desarrollado mi currículum vitae en HTML, empleando conceptos básicos como divs, listas ordenadas y desordenadas, encabezados, párrafos, entre otros elementos.</p>
         </div>
         <div class="imagendesafios">
@@ -54,9 +116,9 @@
 
     <hr>
 
-    <div class="des1">
+    <div class="des1" id="2">
         <div class="texto">
-            <h1>Desafío 2. Introducción a CSS</h1>
+            <h2>Desafío 2. Introducción a CSS</h2>
             <p>Se ha creado un landing page utilizando CSS, se utilizaron propiedades como padding, margin, colores, IDs, clases, entre otros elementos.</p>
         </div>
         <div class="imagendesafios">
@@ -66,9 +128,9 @@
 
     <hr>
 
-    <div class="des1">
+    <div class="des1" id="3">
         <div class="texto">
-        <h1>Desafío 3. Alineando contenido con Flex</h1>
+        <h2>Desafío 3. Alineando contenido con Flex</h2>
         <p>Se ha profundizado el conocimiento en CSS, donde se construyó un sitio utilizando display flex para alinear contenidos.</p>
         </div>
         <div class="imagendesafios">
@@ -78,9 +140,9 @@
 
     <hr>
 
-    <div class="des1">
+    <div class="des1" id="4">
         <div class="texto">
-        <h1>Desafío 4. Bootstrap</h1>
+        <h2>Desafío 4. Bootstrap</h2>
         <p>Se ha utilizado la libreria de bootstrap para desarrollar componentes más complejos de forma sencilla</p>
         </div>
         <div class="imagendesafios">
@@ -90,9 +152,9 @@
 
     <hr>
 
-    <div class="des1">
+    <div class="des1" id="5">
         <div class="texto">
-        <h1>Desafío 5. Terminal, Git y Github</h1>
+        <h2>Desafío 5. Terminal, Git y Github</h2>
         <p>Se ha forkeado un repositorio en github desde git y la terminal</p>
         </div>
         <div class="imagendesafios">
@@ -100,18 +162,18 @@
         </div>
     </div>
 
+</section>
     
     
-    <div class="bg-dark text-light foot">
-    <div class="container">
+    <div class="container foot">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
-            <p class="col-md-4 mb-0">© 2024 Company, Inc</p>
+            <p class="col-md-4 mb-0">© 2024 Verónica Gatica</p>
     
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
+                <li class="nav-item"><a href="#tres" class="nav-link px-2 ">Portafolio</a></li>
+                <li class="nav-item"><a href="#dos" class="nav-link px-2 ">Experiencia</a></li>
+                <li class="nav-item"><a href="#uno" class="nav-link px-2 ">Formación</a></li>
             </ul>
         </footer>
     </div>
@@ -122,6 +184,6 @@
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <link rel="stylesheet" href="assets/css/style.css">
 </body>
 </html>
