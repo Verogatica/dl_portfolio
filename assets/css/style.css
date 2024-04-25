@@ -1,0 +1,19 @@
+.imagendesafios {height: 390px;
+    overflow: hidden; 
+}
+
+.des1 {display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;}
+
+.texto {width: 600px;
+    padding-top: 80px;
+    padding-right: 40px;}
+
+hr {width: 80%;
+    margin-top: 60px;
+    margin-bottom: 60px;}
+
+.foot {height: 300px;
+    padding-top: 160px;}
